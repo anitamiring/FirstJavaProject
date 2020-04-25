@@ -30,8 +30,8 @@ class CaesarCipher
         System.out.println("Text  : " + text);
         System.out.println("Shift : " + s);
         StringBuffer eText = encrypt(text, s);
+
         System.out.println("Cipher: " + eText);
-        s = s%26;
         System.out.println("De-Cipher: " + encrypt(eText.toString(),26-s));
     }
 }
